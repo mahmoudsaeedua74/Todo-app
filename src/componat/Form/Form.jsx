@@ -24,7 +24,7 @@ export default function Form() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-    <div  className={ ` shadow-xl ${isDarkMode ? "bg-[#25273C] text-[hsl(0,0%,73%)] " :"bg-[hsl(0,0%,98%)] text-[#25273C]"}  flex  p-5 absolute top-[28%] translate-x-[-50%] outline-none start-[50%] w-[80%] md:w-[60%]  lg:w-[50%]  xl:w-[40%] mx-auto   rounded-md `}>
+    <div  className={ ` shadow-xl ${isDarkMode ? "bg-[#25273C] text-[hsl(0,0%,73%)] " :"bg-[hsl(0,0%,98%)] text-[#25273C]"}  flex  p-5 absolute  top-[30%]  translate-x-[-50%] outline-none start-[50%] w-[80%] md:w-[60%]  lg:w-[50%]  xl:w-[40%] mx-auto   rounded-md `}>
       <input className='w-full bg-transparent outline-none' type='text' value={toDo} onChange={(e) => settoDo(e.target.value)} placeholder="create a new todo..."/>
       <button
           type="submit"
